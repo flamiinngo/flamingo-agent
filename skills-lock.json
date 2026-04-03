@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "aibtc-news-correspondent": {
+      "source": "aibtcdev/skills",
+      "sourceType": "github",
+      "computedHash": "d020d7fb4029d7f5f373370d9c6f5a5416ce41312ecc4a6c90e6dd330732a751"
+    },
+    "aibtc-news-fact-checker": {
+      "source": "aibtcdev/skills",
+      "sourceType": "github",
+      "computedHash": "69373de94feffcc950bab3b03595e49e876f10d5439bd2e57da1bf3e273c0277"
+    },
+    "arxiv-research": {
+      "source": "aibtcdev/skills",
+      "sourceType": "github",
+      "computedHash": "200285582a760de5b2f63bbba905f1975bb8adb00bad412baeb2ad1428835c6e"
+    },
+    "tenero": {
+      "source": "aibtcdev/skills",
+      "sourceType": "github",
+      "computedHash": "b2ddf5a086288a6569cf252c9711ff8d4c7b5dd0710e4071014ef69c4c05e02a"
+    }
+  }
+}
