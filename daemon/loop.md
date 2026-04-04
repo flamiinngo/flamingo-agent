@@ -62,6 +62,7 @@ New messages? Classify:
 
 ### 2d. Balance & Runway Check
 Check BTC/sBTC/STX via MCP. Compare to portfolio.md. Investigate changes.
+**Use `mcp__aibtc__sbtc_get_balance` directly** — stxer ft_balance format is unreliable for sBTC; MCP is the canonical source.
 **Compute runway:** `sBTC balance / avg daily spend`. Update CEO status (peacetime/wartime).
 
 **Auto-bridge policy:**
@@ -512,3 +513,4 @@ wSTX rewards accrue continuously. Claim when profitable, not on a fixed schedule
 - v4 → v5 (cycle 440): Integrated CEO Operating Manual. Added decision filter, weekly review, CEO evolution rules.
 - v5 → v6: Fresh context per cycle via STATE.md handoff. 9 phases (evolve is periodic). Minimal file reads (~380 tokens idle, ~1500 busy). Inbox API switched to ?status=unread. Circuit breaker pattern. Modulo-based periodic task rotation.
 - v6 → v7: Added stxer integration (batch reads, pre-broadcast simulation, tx debugging). Added Zest Protocol yield farming module. Pre-broadcast guard is now mandatory for contract calls.
+- v7 patch (cycle 10): Phase 2d — stxer ft_balance unreliable for sBTC; use mcp__aibtc__sbtc_get_balance as canonical balance source.

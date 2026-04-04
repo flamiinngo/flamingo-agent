@@ -45,3 +45,7 @@
 - Our loop.md v7 already implements backup + section validation pattern
 - Trusted sender gate is not explicitly in loop.md v7 — consider adding to loop.md on next evolve cycle
 - GitHub not configured so cannot comment on PRs yet
+
+## 2026-04-04 (Cycle 10)
+- Wallet password format: the `@` prefix is part of the password (e.g. `@0987654321`), not a message prefix. Users entering `@password` mean the literal string.
+- stxer batch call `ft_balance` with 3-element array format fails for sBTC: "bad request: require fungible token identifier and owner, but got 3 parameters". Use `mcp__aibtc__sbtc_get_balance` directly as the reliable fallback.
